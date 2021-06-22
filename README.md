@@ -4,8 +4,7 @@ Este proyecto esta dividido en 2 partes, un front (Hecho en **angular**) y un ba
 
 ## Explicación de buenas prácticas
 
-Realice el código con el fin de que sea fácilmente leído y con nombres descriptivos que concuerdan con los datos que tienen o las funcionalidades que realizan, con la menor cantidad de código repetido, teníendo en cuenta los patrones de diseño.
-
+Utilice mis conocimientos en buenas prácticas para el desarrollo desoftware en este caso en concreto se puede identificar que se evito la creación innecesaria de  objetos, los nombres utilizados para las clases, variables y métodos son acordes con lo que representan, no se hizo repetición de código, creando propias excepciones para partes del código de “negocio”, siempre intentando tener patrones de diseño como **Solid** o **Gang of four**.
 ## Requerimientos
 
 Se necesita instalar mínino la versión 10 de node js, este trae npm integrado.
