@@ -1,0 +1,29 @@
+.navbar {
+    padding:0rem;
+    margin-bottom:2rem;
+  }
+  
+  .dropdown .dropdown-menu {
+    border-radius:0;
+   }
+  
+  
+  
+  @media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    border-radius:0;
+   }
+  }
+  
+  nav .navbar-nav li a{
+    color: white !important;
+    }
+  
+    .dropdown-item:active {
+      background-color: #212529;
+    }
+    .dropdown-item:hover {
+      background-color: #212529!important;
+    }

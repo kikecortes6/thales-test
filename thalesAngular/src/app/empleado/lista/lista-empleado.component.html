@@ -1,0 +1,46 @@
+<div class="container">
+
+  <hr>
+
+  <form class="form-inline w-75" role="search" [formGroup]="busquedaEmpleadoForm" (ngSubmit)="buscarEmpleado()">
+    <label for="input-buscar" class='sr-only'>Buscar empleado por id</label>
+    <input class="form-control mr-sm-2 w-75" type="search" id="input-buscar" placeholder="Buscar empleado por id"
+      aria-label="Buscar" name="buscar" formControlName="id">
+    <button class="btn btn-dark my-2 my-sm-0" type="submit" role="button" aria-label="Boton buscar">Buscar</button>
+  </form>
+  <hr>
+  <table class="table table-striped table-hover">
+    <caption></caption>
+    <thead class="thead-dark">
+      <tr class="text-center">
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Foto de perfil</th>
+        <th scope="col">Salario</th>
+        <th scope="col">Salario anual</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center" *ngFor="let empleado of empleados">
+        <th scope="row">{{empleado.id}}</th>
+        <td>{{empleado.employee_name}}</td>
+        <td>{{empleado.employee_age}}</td>
+        <td>{{empleado.profile_image==''? '---':empleado.profile_image}}</td>
+        <td>{{empleado.employee_salary | currency}}</td>
+        <td>{{empleado.employee_anual_salary | currency}}</td>
+      </tr>
+      <tr *ngIf="loading">
+        <td colspan="6" class="mx-auto" style="width: 200px;">
+          <app-loading></app-loading>
+        </td>
+
+      </tr>
+      <tr class="text-center" *ngIf="empleados.length===0">
+        <td colspan="6">No existen datos de empleados</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>

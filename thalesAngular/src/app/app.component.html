@@ -1,0 +1,44 @@
+<div role="main">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" role="navigation" aria-label="Principal">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/thales.png" alt="">
+    </a>
+    <div class="navbar-toggler-right">
+      <button class="navbar-toggler" type="button" role="button" aria-pressed="false" data-toggle="collapse"
+        data-target="#navbar" aria-expanded="false" aria-label="Navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse flex-column " id="navbar">
+      <ul class="navbar-nav  w-100 justify-content-center px-3" id="navegationList">
+
+        <li class="nav-item ">
+          <a class="nav-link" tabindex="0" role="link" routerLink="/album" id="albumsLink">
+            Link 1
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" tabindex="0" role="link" routerLink="/coleccionistas" id="coleccionistasLink">
+            Link 2
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" tabindex="0" role="link" routerLink="/musicos" id="musicosLink">
+            Link 3
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" tabindex="0" role="link" routerLink="/premios" id="premiosLink">
+            Link 4
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="mx-auto" style="width: 200px;">
+    <h1>Empleados</h1>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
